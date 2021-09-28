@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mini-project-NadiaLayraAziza</string>
+    <string name="nama_perusahaan">Nama Perusahaan</string>
+    <string name="link">Link</string>
 </resources>
