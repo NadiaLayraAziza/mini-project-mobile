@@ -4,6 +4,7 @@ public class Perusahaan {
     private String name;
     private String link;
     private int logo;
+    private String deskripsi;
 
     public String getName() {
         return name;
@@ -27,5 +28,13 @@ public class Perusahaan {
 
     public void setLogo(int logo) {
         this.logo = logo;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 }
