@@ -33,7 +33,7 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
         Perusahaan p = listPerusahaan.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(p.getLogo())
-                .apply(new RequestOptions().override(50, 50))
+                .apply(new RequestOptions().override(60, 60))
                 .into(holder.imgLogo);
         holder.tvName.setText(p.getName());
         holder.tvLink.setText(p.getLink());
