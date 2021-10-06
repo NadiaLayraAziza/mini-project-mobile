@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -29,5 +30,13 @@ public class MainActivity extends AppCompatActivity {
         PerusahaanAdapter perusahaanAdapter = new PerusahaanAdapter(list);
         rvPerusahaan.setAdapter(perusahaanAdapter);
 
+        perusahaanAdapter.setOnItemClickCallback(new PerusahaanAdapter.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(Perusahaan p) {
+                Intent moveIntent = new Intent(MainActivity.this, DetailActivity.class);
+                moveIntent.putExtra(DetailActivity.ITEM_EXTRA, p);
+                startActivity(moveIntent);
+            }
+        });
     }
 }

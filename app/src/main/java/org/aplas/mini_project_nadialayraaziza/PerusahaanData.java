@@ -82,6 +82,7 @@ public class PerusahaanData {
             p.setName(name[position]);
             p.setLink(link[position]);
             p.setLogo(logo[position]);
+            p.setDeskripsi(deskripsi[position]);
             list.add(p);
         }
         return list;

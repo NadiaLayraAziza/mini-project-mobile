@@ -18,6 +18,12 @@ import java.util.List;
 public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.ListViewHolder> {
     private ArrayList<Perusahaan> listPerusahaan;
 
+    private OnItemClickCallback onItemClickCallback;
+
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback;
+    }
+
     public PerusahaanAdapter(ArrayList<Perusahaan> list) {
         this.listPerusahaan = list;
     }
@@ -38,6 +44,13 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
         holder.tvName.setText(p.getName());
         holder.tvLink.setText(p.getLink());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onItemClickCallback.onItemClicked(listPerusahaan.get(holder.getAdapterPosition()));
+            }
+        });
+
     }
 
     @Override
@@ -55,5 +68,9 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
             tvName = itemView.findViewById(R.id.ItemName);
             tvLink = itemView.findViewById(R.id.ItemLink);
         }
+    }
+
+    public interface OnItemClickCallback{
+        void onItemClicked(Perusahaan data);
     }
 }
