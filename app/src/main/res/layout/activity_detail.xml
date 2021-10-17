@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="450dp"
-        android:layout_height="450dp"
-        android:background="@color/white" />
-
-    <TextView
-        android:id="@+id/NamePerusahaan"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="470dp"
-        android:text="@string/nama_perusahaan"
-        android:layout_marginLeft="20dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/DetailPerusahaan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/NamePerusahaan"
-        android:text="@string/detail_perusahaan"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:background="@color/white" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/NamePerusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="470dp"
+            android:text="@string/nama_perusahaan"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/DetailPerusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NamePerusahaan"
+            android:text="@string/detail_perusahaan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>

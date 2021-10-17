@@ -87,4 +87,5 @@ public class PerusahaanData {
         }
         return list;
     }
+
 }
