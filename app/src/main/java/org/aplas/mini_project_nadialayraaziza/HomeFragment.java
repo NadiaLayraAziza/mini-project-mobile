@@ -32,6 +32,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        menu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SemikonduktorActivity.class));
+            }
+        });
+
         return v;
     }
 

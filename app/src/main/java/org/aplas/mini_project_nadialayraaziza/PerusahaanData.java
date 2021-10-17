@@ -16,8 +16,6 @@ public class PerusahaanData {
             "Infosys",
             "Amazon",
             "Adobe Systems",
-            "Intel",
-            "Microchip Technology",
             "Salesforce"
     };
 
@@ -34,8 +32,6 @@ public class PerusahaanData {
             "https://www.infosys.com/",
             "https://www.amazon.com/",
             "https://www.adobe.com/",
-            "https://www.intel.co.id/content/www/id/id/homepage.html",
-            "https://www.microchip.com/",
             "https://www.salesforce.com/ap/?ir=1"
     };
 
@@ -52,8 +48,6 @@ public class PerusahaanData {
             R.drawable.infosys,
             R.drawable.amazon,
             R.drawable.adobe,
-            R.drawable.intel,
-            R.drawable.microchip,
             R.drawable.salesforce
     };
 
@@ -70,8 +64,6 @@ public class PerusahaanData {
             "Infosys adalah perusahaan yang dirintis oleh N.R Narayana Murthy dan Nandan Nilekani, perusahaan yang memiliki basis operasional di kota Bengaluru India ini, mantap duduk di posisi 10 besar. Sejak memulai kiprahnya di dunia IT tahun1981, di tangan Salil Parekh sebagai CEO, Infosys berhasil menjadi firma IT ke 2 terbesar di India. Adapun layanan utama Infosys bervariasi dari sektor software (development dan maintenance), asuransi, fintech (financial technology), konsultan di sektor manufaktur, serta penyedia jasa outsourcing. Dalam pengembangan sayap business, Infosys menjadi pemain terbesar dalam sektor retail perbankan lewat produk unggulannya Finacle –sebuah sistem teknologi perbankan global. Tahun 2019, Infosys memiliki 243,454 karyawan (37,8% di antaranya adalah perempuan). Masih di tahun yang sama, perusahaan ini menerima tak kurang dari 2.333.420 surat lamaran pekerjaan, melakukan interview untuk 180.225 calon karyawan, serta  mempekerjakan 94.324 orang. Angka-angka tersebut menempatkan Infosys sebagai salah satu perusahaan yang memiliki prosentase hiring rate terbesar yaitu 4% setiap tahunnya.",
             "Amazon adalah perusahaan teknologi multinasional Amerika yang berbasis di Seattle, Washington, yang berfokus pada e-commerce, komputasi awan, streaming digital, dan kecerdasan buatan. Perusahaan ini dianggap sebagai salah satu perusahaan teknologi Big Four bersama dengan Google Alphabet, Apple Inc., Microsoft, dan Facebook. Amazon didirikan oleh Jeff Bezos pada 5 Juli 1994 di Bellevue, Washington. Perusahaan ini awalnya dimulai sebagai pasar online untuk buku tetapi kemudian diperluas untuk menjual barang elektronik, perangkat lunak, video game, pakaian, furnitur, makanan, mainan, dan perhiasan. Pada 2015, Amazon melampaui Walmart sebagai pengecer paling berharga di Amerika Serikat dengan kapitalisasi pasar. Pada tahun 2017, Amazon mengakuisisi Whole Foods Market senilai $ 13,4 miliar, yang sangat meningkatkan kehadiran Amazon sebagai pengecer batu-dan-mortir. Pada 2018, Bezos mengumumkan bahwa layanan pengiriman dua hari, Amazon Prime, telah melampaui 100 juta pelanggan di seluruh dunia.",
             "Adobe Systems adalah perusahaan perangkat lunak yang bergerak di bidang grafis, animasi, video, dan pengembangan web. Adobe adalah salah satu perusahaan perangkat lunak yang paling besar di dunia. Perusahaan ini didirikan pada tahun 1982 dan berpusat di San Jose, California, AS. Beberapa dari produk-produknya yang terkenal dan mendunia adalah Photoshop, Flash, dan Acrobat. Hingga 2019, Adobe mempekerjakan lebih dari 21.000 orang di seluruh dunia, dengan sekitar 40% di antaranya bekerja di San Jose. Adobe pun memiliki sejumlah unit pengembangan besar di Amerika Serikat, yakni di Newton, New York City, Minneapolis, Lehi, Seattle, Austin, dan San Francisco. Adobe juga memiliki unit pengembangan besar di Noida dan Bangalore di India.",
-            "Intel Corporation adalah perusahaan multinasional dan perusahaan teknologi Amerika yang berkantor pusat di Santa Clara, California, di Silicon Valley. Ini adalah produsen semiconductor chip terbesar di dunia berdasarkan pendapatan, dan merupakan pengembang seri x86 dari mikroprosesors, prosesor yang ditemukan di sebagian besar komputer pribadi (PC). Incorporated in Delaware, Intel berada di peringkat No. 45 di 2020 Fortune 500 daftar perusahaan Amerika Serikat terbesar berdasarkan total pendapatan selama hampir satu dekade, dari tahun fiskal 2007 hingga 2016. Intel didirikan pada 18 Juli 1968, oleh perintis semikonduktor Gordon Moore (dari hukum Moore) dan Robert Noyce, dan dikaitkan dengan kepemimpinan eksekutif dan visi Andrew Grove. Nama perusahaan disusun sebagai portmanteau dari kata integrated dan electronics, dengan salah satu pendiri Noyce telah menjadi penemu kunci dari integrated circuit (mikrochip).",
-            "Microchip Technology Inc. is a publicly-listed American corporation that manufactures microcontroller, mixed-signal, analog and Flash-IP integrated circuits. Its products include microcontrollers (PIC, dsPIC, AVR and SAM), Serial EEPROM devices, Serial SRAM devices, embedded security devices, radio frequency (RF) devices, thermal, power and battery management analog devices, as well as linear, interface and wireless products. Its corporate headquarters is located in Chandler, Arizona. Its wafer fabs are located in Tempe, Arizona, Gresham, Oregon, and Colorado Springs, Colorado. Its assembly/test facilities are in Chachoengsao, Thailand, and Calamba and Cabuyao, Philippines. Sales for the fiscal year ending on March 31, 2019 were $5.35 billion.",
             "Salesforce adalah perusahaan perangkat lunak berbasis awan Amerika Serikat yang bermarkas di San Francisco, California. Meski sebagian besar pendapatannya berasal dari produk manajemen hubungan pelanggan (CRM), Salesforce juga menjual berbagai aplikasi pelengkap bisnis yang berfokus pada layanan pelanggan, otomasi pemasaran, analitika, dan pengembangan aplikasi. Salesforce menempati peringkat pertama dalam daftar 100 Best Companies to Work For yang disusun majalah Fortune tahun 2018. Hingga saat ini Salesforce telah memiliki partner yang tersebar di seluruh dunia, salah satunya yakni Saasten Technologies yang berbasis di Indonesia."
     };
 

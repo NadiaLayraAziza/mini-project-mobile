@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniprojectNadiaLayraAziza">
         <activity
+            android:name=".SemikonduktorActivity"
+            android:exported="true" />
+        <activity
             android:name=".MediaActivity"
             android:exported="true" />
         <activity
