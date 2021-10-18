@@ -19,7 +19,7 @@ public class HardwareActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hardware);
 
         if(getSupportActionBar() != null){
-            getSupportActionBar().setTitle("Perusahaan IT Jenis Hardware");
+            getSupportActionBar().setTitle("Hardware dan Tech.Device");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 

@@ -46,6 +46,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        menu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SoftwareActivity.class));
+            }
+        });
+
         return v;
     }
 

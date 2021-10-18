@@ -9,24 +9,24 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class SemikonduktorActivity extends AppCompatActivity {
-    private RecyclerView rvSemikonduktor;
+public class SoftwareActivity extends AppCompatActivity {
+    private RecyclerView rvSoftware;
     private ArrayList<Perusahaan> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_semikonduktor);
+        setContentView(R.layout.activity_software);
 
         if(getSupportActionBar() != null){
-            getSupportActionBar().setTitle("Semikonduktor");
+            getSupportActionBar().setTitle("Software dan Layanan IT");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        rvSemikonduktor = findViewById(R.id.Rv_Semikonduktor);
-        rvSemikonduktor.setHasFixedSize(true);
+        rvSoftware = findViewById(R.id.Rv_Software);
+        rvSoftware.setHasFixedSize(true);
 
-        list.addAll(SemikonduktorData.getListData());
+        list.addAll(SoftwareData.getListData());
         showRecyclerList();
     }
 
@@ -37,14 +37,14 @@ public class SemikonduktorActivity extends AppCompatActivity {
     }
 
     private void showRecyclerList() {
-        rvSemikonduktor.setLayoutManager(new LinearLayoutManager(this));
+        rvSoftware.setLayoutManager(new LinearLayoutManager(this));
         PerusahaanAdapter perusahaanAdapter = new PerusahaanAdapter(list);
-        rvSemikonduktor.setAdapter(perusahaanAdapter);
+        rvSoftware.setAdapter(perusahaanAdapter);
 
         perusahaanAdapter.setOnItemClickCallback(new PerusahaanAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Perusahaan p) {
-                Intent moveIntent = new Intent(SemikonduktorActivity.this, DetailActivity.class);
+                Intent moveIntent = new Intent(SoftwareActivity.this, DetailActivity.class);
                 moveIntent.putExtra(DetailActivity.ITEM_EXTRA, p);
                 startActivity(moveIntent);
             }
