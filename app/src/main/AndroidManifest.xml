@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniprojectNadiaLayraAziza">
         <activity
+            android:name=".HardwareActivity"
+            android:exported="true" />
+        <activity
             android:name=".SemikonduktorActivity"
             android:exported="true" />
         <activity
