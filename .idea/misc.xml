@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.19583333333333333" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.19583333333333333" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/layout/activity_detail.xml" value="0.1796875" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/layout/activity_hardware.xml" value="0.12907608695652173" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/layout/activity_list.xml" value="0.1" />
@@ -15,6 +17,7 @@
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/layout/fragment_list.xml" value="0.1" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/menu/search_menu.xml" value="0.1796875" />
         <entry key="..\:/SEMESTER 5/Pemrograman Mobile/mini-project-NadiaLayraAziza/app/src/main/res/menu/toolbar.xml" value="0.1796875" />
       </map>
     </option>

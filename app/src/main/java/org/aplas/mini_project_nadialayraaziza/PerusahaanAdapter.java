@@ -3,6 +3,8 @@ package org.aplas.mini_project_nadialayraaziza;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,10 +15,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.ListViewHolder> {
-    private ArrayList<Perusahaan> listPerusahaan;
+public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.ListViewHolder> implements Filterable {
+    ArrayList<Perusahaan> listPerusahaan;
+    ArrayList<Perusahaan> listAll;
 
     private OnItemClickCallback onItemClickCallback;
 
@@ -26,6 +30,7 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
 
     public PerusahaanAdapter(ArrayList<Perusahaan> list) {
         this.listPerusahaan = list;
+        this.listAll = new ArrayList<>(list);
     }
     @NonNull
     @Override
@@ -58,6 +63,38 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
         return listPerusahaan.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        return filter;
+    }
+
+    Filter filter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<Perusahaan> filteredList = new ArrayList<>();
+
+            if (charSequence.toString().isEmpty()) {
+                filteredList.addAll(listAll);
+            } else {
+                for (Perusahaan p: listAll) {
+                    if (p.getName().toLowerCase().contains(charSequence.toString().toLowerCase())) {
+                        filteredList.add(p);
+                    }
+                }
+            }
+            FilterResults filterResults = new FilterResults();
+            filterResults.values = filteredList;
+            return filterResults;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            listPerusahaan.clear();
+            listPerusahaan.addAll((Collection<? extends Perusahaan>) filterResults.values);
+            notifyDataSetChanged();
+        }
+    };
+
     class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imgLogo;
         TextView tvName, tvLink;
@@ -72,5 +109,11 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
 
     public interface OnItemClickCallback{
         void onItemClicked(Perusahaan data);
+    }
+
+    void setFilter(ArrayList<Perusahaan> filterModel) {
+        listPerusahaan = new ArrayList<>();
+        listPerusahaan.addAll(filterModel);
+        notifyDataSetChanged();
     }
 }

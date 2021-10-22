@@ -149,6 +149,7 @@ public class SoftwareData {
 
     private static int [] profile = {
             R.drawable.p38, //Software
+            R.drawable.p39,
             R.drawable.p40,
             R.drawable.p41,
             R.drawable.p42,

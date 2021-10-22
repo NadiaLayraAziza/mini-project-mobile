@@ -501,6 +501,7 @@ public class PerusahaanData {
             R.drawable.p9,
             R.drawable.p10,
             R.drawable.p11,
+            R.drawable.p11b,
             R.drawable.p12,
             R.drawable.p13,
             R.drawable.p14,
@@ -555,7 +556,7 @@ public class PerusahaanData {
             p.setPendidikan(pendidikan[position]);
             p.setKelahiran(kelahiran[position]);
             p.setWafat(wafat[position]);
-//            p.setProfile(profile[position]);
+            p.setProfile(profile[position]);
             list.add(p);
         }
         return list;
