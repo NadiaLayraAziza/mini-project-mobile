@@ -2,12 +2,14 @@ package org.aplas.mini_project_nadialayraaziza;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     MeowBottomNavigation bottomNavigation;
     private RecyclerView rvPerusahaan;
     private ArrayList<Perusahaan> list = new ArrayList<>();
+    PerusahaanAdapter perusahaanAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getId()) {
                     case 1:
                         fragment = new HomeFragment();
+                        getSupportActionBar().setTitle("Halaman Home");
                         break;
                     case 2:
                         fragment = new ListFragment();
+                        getSupportActionBar().setTitle("Halaman All List");
                         break;
                 }
                 loadFragment(fragment);
             }
+
         });
 
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
@@ -65,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 //        rvPerusahaan = findViewById(R.id.Rv_Perusahaan);
 //        rvPerusahaan.setHasFixedSize(true);
 //
-//        list.addAll(PerusahaanData.getListData());
+        list.addAll(PerusahaanData.getListData());
 //        showRecyclerList();
     }
 
@@ -78,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showRecyclerList() {
         rvPerusahaan.setLayoutManager(new LinearLayoutManager(this));
-        PerusahaanAdapter perusahaanAdapter = new PerusahaanAdapter(list);
+        perusahaanAdapter = new PerusahaanAdapter(list);
         rvPerusahaan.setAdapter(perusahaanAdapter);
 
         perusahaanAdapter.setOnItemClickCallback(new PerusahaanAdapter.OnItemClickCallback() {
@@ -90,4 +96,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
