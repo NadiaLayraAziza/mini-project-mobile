@@ -1,21 +1,32 @@
 package org.aplas.mini_project_nadialayraaziza;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
 public class DetailActivity extends AppCompatActivity {
     public static final String ITEM_EXTRA = "item_extra";
+    private ArrayList<Perusahaan> list = new ArrayList<>();
+    Perusahaan p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +37,10 @@ public class DetailActivity extends AppCompatActivity {
         TextView NamePerusahaan = findViewById(R.id.NamePerusahaan);
         TextView DetailPerusahaan = findViewById(R.id.DetailPerusahaan);
 
-        Perusahaan p = getIntent().getParcelableExtra(ITEM_EXTRA);
+        p = getIntent().getParcelableExtra(ITEM_EXTRA);
+        Toast.makeText(this, p.getName(), Toast.LENGTH_SHORT).show();
         if (p != null){
+
             Glide.with(this)
                     .load(p.getLogo())
                     .into(imgLogo);
@@ -56,13 +69,13 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.pendiri) {
             Intent intent = new Intent(DetailActivity.this, PendiriActivity.class);
+            ArrayList<Perusahaan> list = new ArrayList<>();
+            list.addAll(MediaData.getListData());
+            intent.putExtra(ITEM_EXTRA, p);
             startActivity(intent);
-            return true;
-        }
+
         return super.onOptionsItemSelected(item);
     }
+
 }

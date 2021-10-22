@@ -51,6 +51,78 @@ public class MediaData {
             "Dish Network merupakan layanan penyedia jasa televisi dan radio berlangganan yang berpusat di Amerika Serikat. Dish Network diluncurkan pada tanggal 4 Maret 1996 dan diikuti oleh DirecTV, bersaing dengan televisi kabel. Dish Network diluncurkan pada tanggal 4 Maret 1996 sebagai layanan dari EchoStar. EchoStar dibentuk pada tahun 1980 oleh ketua dan CEOnya, Charlie Ergen sebagai distributor satelit gelombang C band. Pada tahun 1995, EchoStar resmi meluncurkan satelit pertama, EchoStar I. Pada tahun itu juga, Dish Network resmi didirikan. Pada tahun 1998, EchoStar membeli aset dari siaran satelit penyiaran kerjasama dari ASkyB milik News Corporation dan MCI Worldcom. Dengan begitu, kapasitas mencapai $682.5 juta. Akuisisi perusahaan terinspirasi untuk memperkenalkan sistem multisatelit yang disebut DISH 500, secara teoretis mampu menerima lebih dari 500 saluran. Pada tahun itu pula, Echostar, bersama dengan Bell TV, meluncurkan Dish Network Canada. EchoStar membeli aset perusahaan HDTV bermasalah, termasuk satelit Rainbow 1 dengan tipe EchoStar 3. Sejak tahun 2008, Dish Network dimiliki oleh Dish Network Corporation."
     };
 
+    private static String [] pendiri = {
+            "Reed Hastings", //Media
+            "Jerald L. Kent",
+            "Jason Jiang",
+            "John Hendricks",
+            "Ralph J. Roberts",
+            "Walt Disney",
+            "Rupert Murdoch",
+            "Jannie Marais",
+            "Charlie Ergen"
+    };
+
+    private static String [] kebangsaan = {
+            "Amerika", //Media
+            "Amerika",
+            "China",
+            "Amerika",
+            "Amerika",
+            "Amerika",
+            "Australia",
+            "South Africa",
+            "Amerika"
+    };
+
+    private static String [] pendidikan = {
+            "Universitas Stanford",
+            "Bachelor's Degree & MBA Washington University",
+            "Data Analytics Student-Springboard",
+            "Universitas Alabama di Huntsville",
+            "Sekolah Wharton (1941)",
+            "Art Institute of Chicago",
+            "Worcester College",
+            "Stellenbosch University (SU)",
+            "Wake Forest University"
+    };
+
+    private static String [] kelahiran = {
+            "8 Oktober 1960",
+            "31 Juli 1956",
+            "Tahun 1973",
+            "29 Maret 1952",
+            "13 Maret 1920",
+            "5 Desember 1901",
+            "11 Maret 1931",
+            "8 September 1851",
+            "1 Maret 1953"
+    };
+
+    private static String [] wafat = {
+            "Belum Wafat", //Media
+            "Belum Wafat",
+            "Belum Wafat",
+            "Belum Wafat",
+            "18 Juni 2015",
+            "15 Desember 1966",
+            "Belum Wafat",
+            "30 Mei 1915",
+            "Belum Wafat"
+    };
+
+    private static int [] profile = {
+            R.drawable.p6, //Media
+            R.drawable.p7,
+            R.drawable.p8,
+            R.drawable.p9,
+            R.drawable.p10,
+            R.drawable.p11,
+            R.drawable.p11b,
+            R.drawable.p12,
+            R.drawable.p13
+    };
+
     static ArrayList<Perusahaan> getListData(){
         ArrayList<Perusahaan> list = new ArrayList<>();
         for (int position = 0; position < name.length; position++) {
@@ -59,6 +131,12 @@ public class MediaData {
             p.setLink(link[position]);
             p.setLogo(logo[position]);
             p.setDeskripsi(deskripsi[position]);
+            p.setPendiri(pendiri[position]);
+            p.setKebangsaan(kebangsaan[position]);
+            p.setPendidikan(pendidikan[position]);
+            p.setKelahiran(kelahiran[position]);
+            p.setWafat(wafat[position]);
+            p.setProfile(profile[position]);
             list.add(p);
         }
         return list;

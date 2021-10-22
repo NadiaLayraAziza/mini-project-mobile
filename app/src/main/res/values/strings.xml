@@ -3,4 +3,9 @@
     <string name="nama_perusahaan">Nama Perusahaan</string>
     <string name="link">Link</string>
     <string name="detail_perusahaan">detail_perusahaan</string>
+    <string name="nama_pendiri">nama_pendiri</string>
+    <string name="kebangsaan">kebangsaan</string>
+    <string name="pendidikan">pendidikan</string>
+    <string name="tgl_lahir">tgl_lahir</string>
+    <string name="tgl_wafat">tgl_wafat</string>
 </resources>

@@ -22,7 +22,6 @@ import java.util.ArrayList;
 public class ListFragment extends Fragment {
     RecyclerView rvPerusahaan;
     ArrayList<Perusahaan> list = new ArrayList<>();
-    public static final String ITEM_EXTRA = "item_extra";
 
     public ListFragment() {
 
@@ -38,7 +37,6 @@ public class ListFragment extends Fragment {
         list.addAll(PerusahaanData.getListData());
         showRecyclerList();
         return view;
-
     }
 
     private void showRecyclerList() {
