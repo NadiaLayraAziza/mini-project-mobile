@@ -28,11 +28,9 @@ public class PendiriActivity extends AppCompatActivity {
         TextView kelahiran = findViewById(R.id.kelahiran);
         TextView wafat = findViewById(R.id.wafat);
 
-//        ArrayList<Perusahaan> p = this.getIntent().getParcelableArrayListExtra(ITEM_EXTRA);
         Perusahaan p = getIntent().getParcelableExtra(ITEM_EXTRA);
 
         if (p != null) {
-//            Toast.makeText(this, p.getPendiri(), Toast.LENGTH_SHORT).show();
             Glide.with(this)
                     .load(p.getProfile())
                     .into(PhotoPendiri);

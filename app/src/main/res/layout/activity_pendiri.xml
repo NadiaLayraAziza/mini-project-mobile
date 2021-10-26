@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,11 +16,11 @@
             android:layout_height="180dp"
             android:background="@color/colorAccent"
             android:padding="20dp">
-            
+
             <ImageView
                 android:id="@+id/PhotoPendiri"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
                 android:layout_centerVertical="true" />
 
             <TextView
@@ -28,193 +28,293 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:layout_toEndOf="@id/PhotoPendiri"
                 android:fontFamily="sans-serif-black"
                 android:includeFontPadding="false"
+                android:textColor="@color/grey_3000"
                 android:textSize="20sp"/>
         </RelativeLayout>
 
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp" >
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-            <ImageView
-                android:id="@+id/imgPerson"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:padding="20dp"
-                android:src="@drawable/user"/>
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/imgPerson"
-                android:layout_toRightOf="@id/imgPerson"
-                android:drawablePadding="30dp"
-                android:orientation="vertical">
+                android:padding="8dp">
 
-                <TextView
+                <ImageView
+                    android:id="@+id/imgPerson"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/userr" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Nama Lengkap" />
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgPerson"
+                    android:layout_toRightOf="@id/imgPerson"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/NamaPendiri"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:text="@string/nama_pendiri" />
-            </LinearLayout>
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_500"
+                        android:hint="Nama Lengkap" />
 
-        <RelativeLayout
+                    <TextView
+                        android:id="@+id/NamaPendiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_3000"
+                        android:text="@string/nama_pendiri" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-            <ImageView
-                android:id="@+id/imgNegara"
-                android:padding="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/germany" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/imgNegara"
-                android:layout_toRightOf="@id/imgNegara"
-                android:drawablePadding="30dp"
-                android:orientation="vertical">
+                android:padding="8dp">
 
-                <TextView
+                <ImageView
+                    android:id="@+id/imgNegara"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/germanyy" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Kebangsaan" />
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgNegara"
+                    android:layout_toRightOf="@id/imgNegara"
+                    android:drawablePadding="30dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/kebangsaan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:text="@string/kebangsaan" />
-            </LinearLayout>
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_500"
+                        android:hint="Kebangsaan" />
 
-        <RelativeLayout
+                    <TextView
+                        android:id="@+id/kebangsaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_3000"
+                        android:text="@string/kebangsaan" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-            <ImageView
-                android:id="@+id/imgToga"
-                android:padding="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/graduation" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/imgToga"
-                android:layout_toRightOf="@id/imgToga"
-                android:drawablePadding="30dp"
-                android:orientation="vertical">
+                android:padding="8dp">
 
-                <TextView
+                <ImageView
+                    android:id="@+id/imgToga"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/toga" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Pendidikan" />
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgToga"
+                    android:layout_toRightOf="@id/imgToga"
+                    android:drawablePadding="30dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/pendidikan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:text="@string/pendidikan" />
-            </LinearLayout>
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_500"
+                        android:hint="Pendidikan" />
 
-        <RelativeLayout
+                    <TextView
+                        android:id="@+id/pendidikan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_3000"
+                        android:text="@string/pendidikan" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-            <ImageView
-                android:id="@+id/imgLahir"
-                android:padding="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/calendar" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/imgLahir"
-                android:layout_toRightOf="@id/imgLahir"
-                android:drawablePadding="30dp"
-                android:orientation="vertical">
+                android:padding="8dp">
 
-                <TextView
+                <ImageView
+                    android:id="@+id/imgLahir"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/calenderr" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Tanggal Lahir" />
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgLahir"
+                    android:layout_toRightOf="@id/imgLahir"
+                    android:drawablePadding="30dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/kelahiran"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:text="@string/tgl_lahir" />
-            </LinearLayout>
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_500"
+                        android:hint="Tanggal Lahir" />
 
-        <RelativeLayout
+                    <TextView
+                        android:id="@+id/kelahiran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_3000"
+                        android:text="@string/tgl_lahir" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-            <ImageView
-                android:id="@+id/imgWafat"
-                android:padding="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/calendar" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/imgWafat"
-                android:layout_toRightOf="@id/imgWafat"
-                android:drawablePadding="30dp"
-                android:orientation="vertical">
+                android:padding="8dp">
 
-                <TextView
+                <ImageView
+                    android:id="@+id/imgWafat"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/calenderr" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Tanggal Wafat" />
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgWafat"
+                    android:layout_toRightOf="@id/imgWafat"
+                    android:drawablePadding="30dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/wafat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:text="@string/tgl_wafat" />
-            </LinearLayout>
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_500"
+                        android:hint="Tanggal Wafat" />
+
+                    <TextView
+                        android:id="@+id/wafat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_3000"
+                        android:text="@string/tgl_wafat" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

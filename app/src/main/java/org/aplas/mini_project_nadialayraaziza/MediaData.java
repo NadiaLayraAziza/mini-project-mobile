@@ -33,10 +33,10 @@ public class MediaData {
             R.drawable.focus,
             R.drawable.discovery,
             R.drawable.comcast,
-            R.drawable.disney,
+            R.drawable.disneyy,
             R.drawable.sky,
-            R.drawable.naspers,
-            R.drawable.dish
+            R.drawable.nasperss,
+            R.drawable.dishh
     };
 
     private static String [] deskripsi = {

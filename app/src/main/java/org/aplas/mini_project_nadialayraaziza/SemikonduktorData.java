@@ -33,12 +33,12 @@ public class SemikonduktorData {
             R.drawable.nvidia,
             R.drawable.broadcom,
             R.drawable.micron,
-            R.drawable.sk,
+            R.drawable.skk,
             R.drawable.asml,
             R.drawable.lam,
             R.drawable.intel,
-            R.drawable.taiwan,
-            R.drawable.nxp,
+            R.drawable.taiwann,
+            R.drawable.nxpp,
             R.drawable.amd
     };
 

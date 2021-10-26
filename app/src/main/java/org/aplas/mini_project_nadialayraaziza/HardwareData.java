@@ -44,12 +44,12 @@ public class HardwareData {
             R.drawable.keyence,
             R.drawable.apple,
             R.drawable.dell,
-            R.drawable.nokia,
+            R.drawable.nokiaa,
             R.drawable.sunny,
             R.drawable.fortive,
             R.drawable.jabil,
             R.drawable.amphenol,
-            R.drawable.boe,
+            R.drawable.boee,
             R.drawable.murata,
             R.drawable.hpe
     };

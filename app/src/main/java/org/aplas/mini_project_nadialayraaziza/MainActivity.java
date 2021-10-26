@@ -22,9 +22,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     MeowBottomNavigation bottomNavigation;
-    private RecyclerView rvPerusahaan;
     private ArrayList<Perusahaan> list = new ArrayList<>();
-    PerusahaanAdapter perusahaanAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        //Set home sebagai menu yang dipilih pertama kali saat buka aplikasi
+        bottomNavigation.show(1,true);
+
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
@@ -67,12 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-//        rvPerusahaan = findViewById(R.id.Rv_Perusahaan);
-//        rvPerusahaan.setHasFixedSize(true);
-//
-        list.addAll(PerusahaanData.getListData());
-//        showRecyclerList();
     }
 
     private void loadFragment(Fragment fragment) {
@@ -81,20 +76,4 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragment_container, fragment)
                 .commit();
     }
-
-    private void showRecyclerList() {
-        rvPerusahaan.setLayoutManager(new LinearLayoutManager(this));
-        perusahaanAdapter = new PerusahaanAdapter(list);
-        rvPerusahaan.setAdapter(perusahaanAdapter);
-
-        perusahaanAdapter.setOnItemClickCallback(new PerusahaanAdapter.OnItemClickCallback() {
-            @Override
-            public void onItemClicked(Perusahaan p) {
-                Intent moveIntent = new Intent(MainActivity.this, DetailActivity.class);
-                moveIntent.putExtra(DetailActivity.ITEM_EXTRA, p);
-                startActivity(moveIntent);
-            }
-        });
-    }
-
 }

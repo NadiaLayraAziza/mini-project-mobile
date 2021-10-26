@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_200"
     tools:context=".DetailActivity">
 
     <RelativeLayout
@@ -12,28 +13,37 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="450dp"
-            android:layout_height="450dp"
-            android:background="@color/white" />
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/white"
+            android:scaleType="center" />
 
         <TextView
             android:id="@+id/NamePerusahaan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/nama_perusahaan"
-            android:layout_marginLeft="20dp" />
+            android:textColor="@color/grey_3000"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/DetailPerusahaan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/NamePerusahaan"
+            android:layout_margin="20dp"
+            android:fontFamily="serif"
             android:text="@string/detail_perusahaan"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"/>
+            android:textColor="@color/black"
+            android:textSize="14sp" />
     </RelativeLayout>
 
 </ScrollView>

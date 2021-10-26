@@ -37,15 +37,15 @@ public class SoftwareData {
 
     private static int [] logo = {
             R.drawable.salesforce,
-            R.drawable.adobe,
+            R.drawable.adobee,
             R.drawable.mahindra,
             R.drawable.tencent,
             R.drawable.dassault,
             R.drawable.naver,
             R.drawable.infosys,
-            R.drawable.intuit,
+            R.drawable.intuitt,
             R.drawable.redhat,
-            R.drawable.verisign,
+            R.drawable.verisignn,
             R.drawable.microsoft,
             R.drawable.sap,
             R.drawable.cognizant
