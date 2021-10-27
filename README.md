@@ -17,20 +17,11 @@ Halaman home adalah halaman yang pertama kali muncul saat aplikasi dibuka/dijala
 
 ## 3. Halaman List pada Masing-Masing Kategori
 Halaman-halaman ini akan muncul sesuai dengan kategori yang diklik pada halaman home.
-
-<div align="center">
-<img src="Dokumentasi/Media.png" height="400">
-<p>List Kategori Media</p>
-<img src="Dokumentasi/Semikonduktor.png" height="400">
-<p>List Kategori Semikonduktor</p>
-</div>
-
-<div align="center">
-<img src="Dokumentasi/Hardware.png" height="400">
-<p>List Kategori Hardware dan Tech.Device</p>
-<img src="Dokumentasi/Software.png" height="400">
-<p>List Kategori Software dan Layanan IT</p>
-</div>
+| List Kategori Media | List Kategori Semikonduktor |
+| ------------ | ------------- |
+| <img src="Dokumentasi/Media.png" height="400"> | <img src="Dokumentasi/Semikonduktor.png" height="400"> |
+| List Kategori Hardware dan Tech.Device | List Kategori Software dan Layanan IT |
+| <img src="Dokumentasi/Hardware.png" height="400"> | <img src="Dokumentasi/Software.png" height="400"> |
 
 ## 4. Halaman Detail Perusahaan
 Halaman ini akan muncul ketika salah satu item list diklik.
