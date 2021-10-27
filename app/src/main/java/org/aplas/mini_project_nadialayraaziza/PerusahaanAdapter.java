@@ -63,6 +63,22 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
         return listPerusahaan.size();
     }
 
+    class ListViewHolder extends RecyclerView.ViewHolder {
+        ImageView imgLogo;
+        TextView tvName, tvLink;
+
+        ListViewHolder(View itemView) {
+            super(itemView);
+            imgLogo = itemView.findViewById(R.id.imgLogoItem);
+            tvName = itemView.findViewById(R.id.ItemName);
+            tvLink = itemView.findViewById(R.id.ItemLink);
+        }
+    }
+
+    public interface OnItemClickCallback{
+        void onItemClicked(Perusahaan data);
+    }
+
     @Override
     public Filter getFilter() {
         return filter;
@@ -94,22 +110,6 @@ public class PerusahaanAdapter extends RecyclerView.Adapter<PerusahaanAdapter.Li
             notifyDataSetChanged();
         }
     };
-
-    class ListViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgLogo;
-        TextView tvName, tvLink;
-
-        ListViewHolder(View itemView) {
-            super(itemView);
-            imgLogo = itemView.findViewById(R.id.imgLogoItem);
-            tvName = itemView.findViewById(R.id.ItemName);
-            tvLink = itemView.findViewById(R.id.ItemLink);
-        }
-    }
-
-    public interface OnItemClickCallback{
-        void onItemClicked(Perusahaan data);
-    }
 
     void setFilter(ArrayList<Perusahaan> filterModel) {
         listPerusahaan = new ArrayList<>();

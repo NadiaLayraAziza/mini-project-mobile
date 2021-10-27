@@ -5,57 +5,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bghome">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="20dp" />
-    </LinearLayout>
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:rowCount="2"
         android:alignmentMode="alignMargins"
+        android:columnCount="2"
         android:columnOrderPreserved="false"
-        android:paddingTop="270dp">
+        android:paddingTop="270dp"
+        android:rowCount="2">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/menu_media"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="12dp" >
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center">
+                android:padding="16dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/media"/>
+                    android:src="@drawable/media" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:text="Media"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Media" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -64,31 +51,31 @@
             android:id="@+id/menu_semikonduktor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="12dp" >
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center">
+                android:padding="16dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/semikonduktor"/>
+                    android:src="@drawable/semikonduktor" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:text="Semikonduktor"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Semikonduktor" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -97,38 +84,38 @@
             android:id="@+id/menu_hardware"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="12dp" >
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center">
+                android:padding="16dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/hardware"/>
+                    android:src="@drawable/hardware" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:text="Hardware dan"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Hardware dan" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Tech. Device"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Tech. Device" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -137,38 +124,38 @@
             android:id="@+id/menu_software"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            app:cardElevation="6dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="12dp" >
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center">
+                android:padding="16dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/software"/>
+                    android:src="@drawable/software" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:text="Software dan"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Software dan" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Layanan IT"
                     android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:text="Layanan IT" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

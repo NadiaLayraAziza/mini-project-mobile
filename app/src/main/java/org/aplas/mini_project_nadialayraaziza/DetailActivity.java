@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.HeaderViewListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,8 +41,8 @@ public class DetailActivity extends AppCompatActivity {
 
         p = getIntent().getParcelableExtra(ITEM_EXTRA);
         Toast.makeText(this, p.getName(), Toast.LENGTH_SHORT).show();
-        if (p != null){
 
+        if (p != null){
             Glide.with(this)
                     .load(p.getLogo())
                     .into(imgLogo);
