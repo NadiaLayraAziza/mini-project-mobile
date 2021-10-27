@@ -1,5 +1,7 @@
 # mini-project-NadiaLayraAziza
 
+[Link Youtube Dokumentasi Mini Project](https://youtu.be/-c6NU3RwAk4)
+
 # Dokumentasi Hasil Mini-Project-1
 
 ## 1. Halaman Home

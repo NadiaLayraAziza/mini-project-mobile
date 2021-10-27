@@ -72,8 +72,6 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
             Intent intent = new Intent(DetailActivity.this, PendiriActivity.class);
-            ArrayList<Perusahaan> list = new ArrayList<>();
-            list.addAll(MediaData.getListData());
             intent.putExtra(ITEM_EXTRA, p);
             startActivity(intent);
 
