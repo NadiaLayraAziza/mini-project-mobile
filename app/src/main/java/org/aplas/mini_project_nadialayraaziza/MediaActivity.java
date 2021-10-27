@@ -25,7 +25,7 @@ public class MediaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_media);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Perusahaan IT Jenis Media");
+            getSupportActionBar().setTitle("Media");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
